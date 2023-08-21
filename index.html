@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="main-container">
+    <div id="lelf-container">
+      <img id="mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
+      <img id="desktop" src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
+    </div>
+    <div id="right-container">
+      <h1>Stay updated!</h1>
+      <p>join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+      <form>
+        <div id="email-container">
+            <p>Email address</p>
+            <p id="email-error"></p>
+        </div>
+        <input id="emailtext" type="text" placeholder="    email@company.com" onblur="validateEmail()">
+    </form>
+      <button id="subscribe-button">subscribe to monthly newsletter</button>
+    </div>
+  </div>
+  <div id="success-container">
+    <img  id="success-image" src="./assets/images/icon-success.svg" alt="">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <strong>Ash@loremcompany.com.</strong> Please open it and click the button inside to confirm your subscription</p>
+    <button id="dismiss-button">dismiss-button</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
